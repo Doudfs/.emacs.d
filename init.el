@@ -10,7 +10,7 @@
 
 ;; Set path to dependencies
 (setq packages-dir
-      (expand-file-name "packages" user-emacs-directory))
+      (expand-file-name "site-lisp" user-emacs-directory))
 
 ;; Set up load path
 (add-to-list 'load-path user-emacs-directory)
@@ -68,7 +68,7 @@
 ;;;;
 
 ;; JDEE
-(add-to-list 'load-path "~/.emacs.d/packages/jdee/lisp")
+(add-to-list 'load-path "~/.emacs.d/site-lisp/jdee/lisp")
 (load "jde")
 
 ;; Smooth-scrolling -> disable jump when point near top or bottom
