@@ -1,0 +1,48 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables (list 
+   (semanticdb-table "Test.java"
+    :major-mode 'jde-mode
+    :tags 
+        '( ("test" package nil nil [155 168])
+            ("Test" include nil nil [170 182])
+            ("Test" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("prenom" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [210 232])
+                    ("nom" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [242 261])
+                    ("Test" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("prenom" variable (:type "String") (reparse-symbol formal_parameters) [283 296])
+                            ("nom" variable (:type "String") (reparse-symbol formal_parameters) [298 308]))                          )
+                        (reparse-symbol class_member_declaration) [271 357])
+                    ("getPrenom" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [367 421])
+                    ("getNom" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [427 475]))                  
+                :type "class")
+                nil [185 478]))          
+    :file "Test.java"
+    :pointmax 479
+    :fsize 478
+    :lastmodtime '(21317 12158 750942 800000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!var!www!lab!tests!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
