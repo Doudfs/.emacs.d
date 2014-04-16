@@ -9,12 +9,17 @@
 (package-initialize)
 
 ;; Set path to dependencies
-(setq packages-dir
+(setq site-lisp-dir
       (expand-file-name "site-lisp" user-emacs-directory))
 
 ;; Set up load path
 (add-to-list 'load-path user-emacs-directory)
-(add-to-list 'load-path packages-dir)
+(add-to-list 'load-path site-lisp-dir)
+
+;;;; For subdir too 
+(dolist (project (directory-files site-lisp-dir t "\\w+"))
+  (when (file-directory-p project)
+    (add-to-list 'load-path project)))
 
 ;; Keep emacs Custom-settings in separate file
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
@@ -53,6 +58,9 @@
 ;; Show line numbers
 (global-linum-mode 1)
 
+;; Override selection
+(delete-selection-mode 1)
+
 ;; No backups files ~ !
 (setq make-backup-files nil)
 
@@ -89,3 +97,22 @@
 
 ;; Zencoding
 (require 'zencoding-mode)
+
+;; Multiple cursors
+(require 'multiple-cursors)
+
+;; Expand region
+(require 'expand-region)
+
+;; cc-mode
+(require 'cc-mode)
+
+;; Auto complete
+(require 'auto-complete)
+(global-auto-complete-mode t)
+(setq ac-ignore-case nil)
+
+;; Autopair
+(require 'autopair)
+(autopair-global-mode 1)
+(setq autopair-autowrap t)

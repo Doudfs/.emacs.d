@@ -1,1 +1,6 @@
 .places
+semanticdb/*
+.mc-lists.el
+*.dat
+session.*
+auto-save-list/.*
