@@ -1,0 +1,7 @@
+# contributor: Edouard Eynard <edouard.eynard@gmail.com>
+# name: equals
+# key: eq
+# --
+public boolean equals(${1:ClassName} ${2:var}) {
+    $0;
+}

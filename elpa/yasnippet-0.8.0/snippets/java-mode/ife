@@ -1,0 +1,9 @@
+# contributor: Edouard Eynard <edouard.eynard@gmail.com>
+# name: if then else statement
+# key: ife
+# --
+if (${1:condition}) {
+   $O;
+} else {
+  
+}

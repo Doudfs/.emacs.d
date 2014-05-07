@@ -1,0 +1,7 @@
+# contributor: Edouard Eynard <edouard.eynard@gmail.com>
+# name: toString
+# key: tos
+# --
+public String toString() {
+    $0;
+}

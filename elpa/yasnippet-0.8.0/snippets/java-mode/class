@@ -1,0 +1,22 @@
+# contributor: Edouard Eynard <edouard.eynard@gmail.com>
+# name: java class
+# key: class
+# --
+public class $1 {
+
+    private ${2:type} ${3:attribut};
+
+    public $1($2 $3) {
+    	this.$3 = $3;
+        $0;
+    }
+
+    public $2 get${3:$(capitalize text)}() {
+        return this.$3;
+    }
+
+    public $1 set${3:$(capitalize text)}($2 $3) {
+        this.$3 = $3;
+        return this;
+    }
+}

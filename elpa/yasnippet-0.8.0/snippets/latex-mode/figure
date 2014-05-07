@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: figure
+# key: figure
+# --
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=${1:350pt}]{${2:img}/${3:image}.${4:jpg}} 
+  \end{center}
+  \caption{${5:Caption}}
+  \label{${6:Label}}
+\end{figure}
+$0

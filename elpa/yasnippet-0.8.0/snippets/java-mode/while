@@ -1,0 +1,7 @@
+# contributor: Edouard Eynard <edouard.eynard@gmail.com>
+# name: while loop
+# key: while
+# --
+while (${1:condition}) {
+    $0;
+}

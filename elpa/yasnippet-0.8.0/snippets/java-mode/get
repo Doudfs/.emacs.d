@@ -1,0 +1,8 @@
+# contributor: Edouard Eynard <edouard.eynard@gmail.com>
+# name: getAttr()
+# key: get
+# --
+public ${1:type} get${2:$(capitalize text)}() {
+    return this.$2;
+}
+$0

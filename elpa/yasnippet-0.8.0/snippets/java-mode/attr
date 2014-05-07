@@ -1,0 +1,6 @@
+# contributor: Edouard Eynard <edouard.eynard@gmail.com>
+# name: this.attr = attr;
+# key: attr
+# --
+this.${1:attribute} = $1;
+$0

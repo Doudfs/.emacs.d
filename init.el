@@ -71,6 +71,9 @@
 (global-unset-key (kbd "C-v"))
 (global-unset-key (kbd "M-v"))
 
+;; Load library for special char like dead-circunflex
+(load-library "iso-transl")
+
 ;;;;
 ;; Load and setup packages
 ;;;;

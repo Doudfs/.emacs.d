@@ -1,0 +1,9 @@
+# contributor: Edouard Eynard <edouard.eynard@gmail.com>
+# name: setAttr()
+# key: set
+# --
+public ${1:ClassName} set${3:$(capitalize text)}(${2:type} ${3:attr}) {
+    this.$3 = $3;
+    return this;
+}
+$0

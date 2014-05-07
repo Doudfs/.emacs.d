@@ -1,0 +1,9 @@
+# contributor: Edouard Eynard <edouard.eynard@gmail.com>
+# name: if then else if statement
+# key: ift
+# --
+if (${1:condition 1}) {
+   $O;
+} else if (${2:condition 2}) {
+
+}

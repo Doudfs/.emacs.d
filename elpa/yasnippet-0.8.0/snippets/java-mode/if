@@ -1,0 +1,7 @@
+# contributor: Edouard Eynard <edouard.eynard@gmail.com>
+# name: if statement
+# key: if
+# --
+if (${1:condition}) {
+   $O;
+}

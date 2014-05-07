@@ -35,4 +35,8 @@
   (setq frame-title-format '(buffer-file-name "%f" ("%b")))
   (tooltip-mode -1))
 
+;; Prevent cursor from blinking
+(blink-cursor-mode 0)
+
+
 (provide 'appearance)

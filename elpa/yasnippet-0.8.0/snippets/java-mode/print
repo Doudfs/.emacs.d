@@ -1,0 +1,5 @@
+# contributor: Edouard Eynard <edouard.eynard@gmail.com>
+# name: System.out.print 
+# key: print
+# --
+System.out.print($O);
